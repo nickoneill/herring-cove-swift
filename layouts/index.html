@@ -1,6 +1,9 @@
 {{ template "theme/partials/header.html" . }}
   <div id="article">
-      <h1>{{.Title}}</h1>
+    <div class="intro">
+      <h1>How do I do that one thing I already know in Objective-C but in swift?</h1>
+      <p>I'm constantly wondering how the patterns that I know and love in Objective-C translate to swift. This is my attempt to log the ones I come across.</p>
+    </div>
   <ul class="posts">
       {{ range .Data.Pages }}
       <li><span><a href="{{ .Permalink }}">{{ .Title }}</a><time class="pull-right post-list">{{ .Date.Format "Mon, Jan 2, 2006" }}</h4></time></span></span></li>

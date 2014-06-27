@@ -6,7 +6,7 @@ body
   color:#2c3e50;
   background-color:#f0f0f0;
   width:100%;
-  border-top:solid #d90006;
+  border-top:solid #ff422a;
   border-width:4px
 }
 
@@ -37,10 +37,24 @@ h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover
   color:#29598c
 }
 
+a {
+  color: #ff422a;
+}
+
 p
 {
   font-family:"Helvetica Neue", helvetica, "Open Sans", sans-serif;
   font-weight:200
+}
+
+.intro h1
+{
+  font-size: 22px;
+}
+
+.intro p
+{
+  font-size: 18px;
 }
 
 .posts
@@ -49,7 +63,8 @@ p
   list-style:none;
   font-weight:lighter;
   line-height:250%;
-  padding-bottom:30px
+  padding-bottom:30px;
+  padding-left: 0;
 }
 
 .homepage-posts
@@ -60,8 +75,8 @@ p
 .container
 {
   width:80%;
-  padding-right:0;
-  padding-top:30px
+  /*padding-right:0;
+  padding-top:30px*/
 }
 
 .container a
@@ -72,19 +87,25 @@ p
 
 #wrapper
 {
-  padding-left:250px;
+  /*padding-left:250px;*/
   transition:all .5s ease 0
 }
 
-.navbar 
+.navbar
 {
-  display: none;
+  /*background-color: #ededed;*/
+  /*margin-top: -20px;*/
 }
 
-.navbar a 
+.navbar a
 {
   text-decoration: none;
-  border-bottom: 1px #b1b1b1 solid;
+  border-bottom: none;
+}
+
+.navbar-brand {
+  margin-bottom: 0;
+  font-size: 22px;
 }
 
 #sidebar-wrapper
@@ -370,7 +391,7 @@ pre
 {
   font-size:35px;
   font-weight:700;
-  color:#d90006;
+  /*color:#d90006;*/
   padding-top:15px
 }
 
@@ -396,6 +417,12 @@ img
 .post
 {
   padding-bottom:30px
+}
+
+.post p
+{
+  font-size: 18px;
+  letter-spacing: 0.04em;
 }
 
 .user-social
@@ -425,9 +452,16 @@ time
   text-shadow:1px 1px #fff
 }
 
+code {
+  color: #ff422a;
+}
+
 .pager li > a,.pager li > span
 {
-  border-radius:.5em
+  color: #2a6496;
+  border-radius:.5em;
+  /*font-weight: normal;*/
+  letter-spacing: .06em;
 }
 
 #self
@@ -689,7 +723,6 @@ time
 
 #wrapper {
   padding-left: 0;
-  padding-top: 20px;
 }
 
 #sidebar-wrapper {
@@ -697,9 +730,6 @@ time
     border-top: none;
     left: 0px;
 }
- .nav-toggle {
-    display: ;
-  }
 #wrapper.active {
   position: relative;
   left: 250px;
@@ -715,18 +745,12 @@ time
 .inset {
   padding: 15px;
 }
-.navbar 
-{
-  display: inherit;
-  background-color: #ededed;
-  margin-top: -20px;
-}
 
 }
 
 @media screen and (max-width: 500px) {
   #welcome-greeting h2 {
-   font-size: 15px; 
+   font-size: 15px;
    transition: all 0.2s ease 0s;
    font-weight: 200;
    line-height: 30px;
