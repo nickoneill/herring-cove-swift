@@ -1,12 +1,17 @@
 {{ template "theme/partials/header.html" . }}
-  <div id="article">
-    <div class="intro">
-      <h1>How do I do that one thing I already know in Objective-C but in swift?</h1>
-      <p>I'm constantly wondering how the patterns that I know and love in Objective-C translate to swift. This is my attempt to log the ones I come across.</p>
-    </div>
+  <div class="intro">
+    <h1>How do the Objective-C patterns we already know translate into Swift?</h1>
+    <p>Patterns are your go-to code chunks; the things you know exactly how to do in Objective-C because you've framed code like it in all of your projects. Swift syntax seems to come pretty easy to iOS developers but we still need a lot of exploration to find the best reimplementations our favorite patterns in Swift.</p>
+    <p>This is part of that exploration, listing patterns I've found while working in Swift and that others have shared elsewhere.</p>
+    <p class="byline">– <a href="https://twitter.com/nickoneill">@nickoneill</a></p>
+  </div>
   <ul class="posts">
       {{ range .Data.Pages }}
-      <li><span><a href="{{ .Permalink }}">{{ .Title }}</a><time class="pull-right post-list">{{ .Date.Format "Mon, Jan 2, 2006" }}</h4></time></span></span></li>
+      <li>
+        <p class="title"><a href="{{ .Permalink }}">{{ .Title }}</a></p>
+        <p>{{ .Description }}</p>
+        <time class="pull-right post-list">{{ .Date.Format "Mon, Jan 2, 2006" }}</time>
+      </li>
       {{ end }}
   </ul>
 {{ template "theme/partials/footer.html" }}

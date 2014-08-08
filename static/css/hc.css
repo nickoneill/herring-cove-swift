@@ -47,13 +47,25 @@ p
   font-weight:200
 }
 
+.intro
+{
+  margin-bottom: 20px;
+}
+
 .intro h1
 {
-  font-size: 22px;
+  font-size: 38px;
 }
 
 .intro p
 {
+  font-size: 20px;
+}
+
+.intro p.byline,
+.intro p.byline a
+{
+  color: #bbb;
   font-size: 18px;
 }
 
@@ -67,6 +79,33 @@ p
   padding-left: 0;
 }
 
+.posts li
+{
+  float: left;
+  overflow: hidden;
+  width: 305px;
+  height: 144px;
+  margin: 0 10px 10px 0;
+  padding: 6px 8px 0 8px;
+  background-color:#f9f9f9;
+  box-shadow:1px 1px 0 1px #e8e8e8;
+}
+
+.posts li p
+{
+  line-height: 1.2em;
+}
+
+.posts li p.title
+{
+  font-size: 22px;
+}
+
+.posts li time
+{
+  font-size: 14px;
+}
+
 .homepage-posts
 {
   list-style:none
@@ -75,6 +114,7 @@ p
 .container
 {
   width:80%;
+  max-width: 1000px;
   /*padding-right:0;
   padding-top:30px*/
 }
