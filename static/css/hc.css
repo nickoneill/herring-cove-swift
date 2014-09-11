@@ -458,6 +458,25 @@ img
   padding:10px 40px 0
 }
 
+.playground
+{
+  overflow: auto;
+  margin: 10px -42px 10px -40px;
+  padding: 8px 30px 12px 30px;
+  border-top: 1px solid #e8e8e8;
+  background-color: #f3f3f3;
+}
+
+.playground img
+{
+  float: left;
+  margin-right: 20px;
+}
+.playground p
+{
+  margin: 25px 0 0 0;
+}
+
 .post
 {
   padding-bottom:30px
