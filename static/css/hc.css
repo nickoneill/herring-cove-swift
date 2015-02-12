@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
 
 body
@@ -484,6 +484,7 @@ img
 
 .post p
 {
+  margin: 10px 0;
   font-size: 18px;
   letter-spacing: 0.04em;
 }
