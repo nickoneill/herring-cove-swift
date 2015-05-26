@@ -304,7 +304,8 @@ blockquote
 
 ul,ol
 {
-  font-weight:lighter
+  font-weight: 200;
+  font-size: 18px;
 }
 
 pre
