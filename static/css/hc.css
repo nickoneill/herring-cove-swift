@@ -310,7 +310,11 @@ ul,ol
 
 pre
 {
-  background:#f5f5f8
+  background:#272822;
+  border-color: transparent;
+}
+.highlight {
+  background-color: transparent !important;
 }
 
 #social-wrapper
