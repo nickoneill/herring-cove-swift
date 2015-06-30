@@ -543,8 +543,8 @@ time
   text-shadow:1px 1px #fff
 }
 
-code {
-  color: #ff422a;
+pre code {
+  color: #f8f8f2;
 }
 
 .pager li > a,.pager li > span
