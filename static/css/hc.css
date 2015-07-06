@@ -415,15 +415,15 @@ pre
 {
   bottom:0;
   width:100%;
-  font-size:.8em;
+  font-size:1em;
   text-shadow:1px 1px #fff;
   padding-left:20px;
   margin-bottom:0;
   padding-bottom:5px;
   padding-top:5px;
-  margin-top:40px;
+  margin: 20px 0;
   z-index:1;
-  color:#cdcdcd
+  color:#9d9d9d
 }
 
 .label-danger
@@ -485,7 +485,7 @@ img
   padding:10px 40px 0
 }
 
-.playground
+.playground, .contrib
 {
   overflow: auto;
   margin: 10px -42px 10px -40px;
@@ -499,7 +499,7 @@ img
   float: left;
   margin-right: 20px;
 }
-.playground p
+.playground p, .contrib p
 {
   margin: 25px 0 0 0;
 }
