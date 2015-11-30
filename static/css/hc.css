@@ -69,6 +69,10 @@ p
   font-size: 18px;
 }
 
+.hidden {
+  display: none;
+}
+
 .posts
 {
   font-size:20px;
