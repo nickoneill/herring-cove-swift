@@ -13,10 +13,26 @@
   <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-      <![endif] d-->
-    </head>
-    <body>
-      <div id = "wrapper">
+    <![endif] d-->
+
+  <!-- og properties -->
+  <meta property="og:title" content="{{ if .IsPage }}{{ if isset .Params "htmltitle" }}{{ .Params.htmltitle }}{{ else }}{{ .Title }}{{ end }}{{ else }}{{ .Site.Title }}{{ end }}" />
+  <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website {{ end }}" />
+  <meta property="og:url" content="{{ .Permalink }}" />
+  <!-- <meta property="og:image" content="http://ia.media-imdb.com/images/rock.jpg" /> -->
+  <meta property="og:description" content="{{ if .IsPage }}{{ .Description }}{{ else }}code for objective-c and swift{{ end }}" />
+  <meta property="og:site_name" content="That Thing in Swift" />
+
+  <!-- twitter -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@objctoswift" />
+  <meta name="twitter:creator" content="@nickoneill" />
+
+  <!-- facebook -->
+
+</head>
+<body>
+  <div id = "wrapper">
 
 
 <div class="navbar navbar-default" role="navigation">
@@ -24,11 +40,6 @@
     <div class="navbar-header">
       <p class="navbar-brand"><a href="{{ .Site.BaseUrl }}">{{ .Site.Title }}</a><span class="navbar-icon"><a href="https://twitter.com/objctoswift"><i class="fa fa-twitter-square"></i></a></span><span class="navbar-icon"><a href="https://github.com/nickoneill/thatthinginswift"><i class="fa fa-github-square"></i></a></span><span class="navbar-icon"><a href="/index.xml"><i class="fa fa-rss-square"></i></a></span></p>
     </div>
-  </div>
-</div>
-<div class="treat">
-  <div class="treat-inner hidden">
-      <p><a href="http://bit.ly/1Pasi4u" title="treat, mobile gift card app"><img width="36" height="36" src="/images/treat.png" alt="treat icon" /></a>&nbsp;&nbsp;Want to see what we've built with Swift? Try our app <a href="http://bit.ly/1Pasi4u" title="treat, mobile gift card app">treat, surprise and delight your favorite people</a>.</p>
   </div>
 </div>
 
