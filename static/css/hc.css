@@ -178,6 +178,33 @@ p
   font-weight: 400;
 }
 
+.opensource {
+  margin: 20px 0 35px 0;
+  padding: 0 40px;
+}
+.opensource .small {
+  font-size: 90%;
+  margin: 0 0 2px 16px;
+}
+.opensource .os-project {
+  display: none;
+  padding: 10px 16px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+}
+.opensource .os-project img {
+  float: left;
+  margin-right: 16px;
+}
+.opensource .os-project .os-title {
+  font-size: 180%;
+  font-weight: bold;
+}
+.opensource .os-project p {
+  margin-bottom: 0;
+  font-size: 120%;
+}
+
 #sidebar-wrapper
 {
   margin-left:-250px;
