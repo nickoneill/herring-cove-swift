@@ -188,13 +188,13 @@ p
 }
 .opensource .os-project {
   display: none;
-  padding: 10px 16px;
+  padding: 10px 20px;
   background-color: #f8f8f8;
   border-radius: 10px;
 }
 .opensource .os-project img {
   float: left;
-  margin-right: 16px;
+  margin-right: 20px;
 }
 .opensource .os-project .os-title {
   font-size: 180%;
